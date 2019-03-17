@@ -11,7 +11,13 @@
        {name: {first: 'Obada', last: 'Eddin'}, age: 24} 
  ]; 
  function averageAge(people) { 
-       // YOUR CODE HERE 
+     var a=[];
+     return map(people, function(val,key){
+     	if(val>18 && val<50){
+     		a.push(age);
+     	}
+     	return a;
+     })  // YOUR CODE HERE 
  }
 
  averageAge(people); // 43+36+44+24 = 36.74
