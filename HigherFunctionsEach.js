@@ -6,8 +6,18 @@
         }
     }
 	function negativeAll(array) {
-	 //your code here
-	}
+		nArr = [];
+		each(array, function(element){
+			if(element > 0){
+				nArr.push(-element)
+			}
+			else{
+			 	nArr.push(element)
+			}
+
+		});
+		return nArr;
+ 	}
 
 	/*
 	2) using improved each write function that multiply each element in array with
@@ -23,5 +33,11 @@
         }
     }
 	function multiplyOfFour(array) {
-	    //your code here
+	    nArr = [];
+	    each(array,function(element,i){
+	    	if(i % 4 === 0){
+	    		nArr.push(element*4)
+	    	}
+	    });
+	    return nArr
 	}
