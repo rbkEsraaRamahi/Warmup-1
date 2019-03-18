@@ -6,7 +6,20 @@
         }
     }
 	function negativeAll(array) {
-	 //your code here
+	 // declare empty array to hold the result;
+	 var resultArr = [];
+	 each(array,function(element){
+	 	// check the number inside the array greter than 0 (positive)
+	 	if (element > 0) { 
+	 		// if the number positive multiply it by -1 to be negative and added to the result array
+	 		resultArr.push(element * (-1));
+	 	} else {
+	 		// if the number negative added to the result array 
+			resultArr.push(element)
+		}
+	 })
+	 // return reult array
+	 return resultArr;
 	}
 
 	/*
@@ -23,5 +36,15 @@
         }
     }
 	function multiplyOfFour(array) {
-	    //your code here
+	    //array for the result
+	    var resultArr = [];
+	    each(array,function(element,index){
+	    	// check if the index of multiply of 4 
+	    	if (index % 4 === 0) { 
+	    		// add the elment multiply by 4
+	    		resultArr.push(element * 4);
+	    	}
+	    })
+	    // return the result
+	    return resultArr;
 	}
