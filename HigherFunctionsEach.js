@@ -6,7 +6,15 @@
         }
     }
 	function negativeAll(array) {
-	 //your code here
+		var result =[];
+	 each(array, function(element){
+	 	if (element > 0){
+	 		element = - element
+	 	}
+	 	result.push(element)
+	 })
+	 return result;
+
 	}
 
 	/*
@@ -23,5 +31,13 @@
         }
     }
 	function multiplyOfFour(array) {
-	    //your code here
+		var result = [];
+	    each(array, function(element,i){
+	    	if(i % 4 === 0){
+	    		element[i] = element[i]*4
+	    		result.push(element[i])
+	    	}
+	    	
+	    })
+	    return result;
 	}
