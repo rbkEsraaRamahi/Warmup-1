@@ -5,8 +5,20 @@
           func(array[i]);
         }
     }
+
+
 	function negativeAll(array) {
-	 //your code here
+	 var arr=[];
+	 each(array,function(element,index){
+	 	if(element<0){
+	 		arr.push(-1*element);
+	 	}else{
+	 		arr.push(element);
+	 	}
+	 });
+
+	 		return arr;
+
 	}
 
 	/*
@@ -23,5 +35,13 @@
         }
     }
 	function multiplyOfFour(array) {
-	    //your code here
+	    var arr=[];
+	    each(array,function(element,index){
+	    	if(index%4 ===0){
+	    		arr.push(4*element);
+	    	}
+
+
+	    });
+	        return arr; 
 	}
